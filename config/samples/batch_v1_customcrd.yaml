@@ -10,3 +10,12 @@ metadata:
   name: customcrd-sample
 spec:
   # TODO(user): Add fields here
+  deploymentName: "my-deploy"
+  replicas: 3
+  container:
+    image: skaliarman/api-server
+    port: 8080
+  service:
+    erviceName: "my-service"
+    serviceType: "NodePort"
+    servicePort: 8090

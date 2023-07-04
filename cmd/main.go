@@ -88,7 +88,7 @@ func main() {
 		setupLog.Error(err, "unable to start manager")
 		os.Exit(1)
 	}
-
+	z
 	if err = (&controller.CustomCrdReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
