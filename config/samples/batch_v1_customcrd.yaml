@@ -1,0 +1,12 @@
+apiVersion: batch.tutorial.kubebuilder.io/v1
+kind: CustomCrd
+metadata:
+  labels:
+    app.kubernetes.io/name: customcrd
+    app.kubernetes.io/instance: customcrd-sample
+    app.kubernetes.io/part-of: kube-builder-crd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kube-builder-crd
+  name: customcrd-sample
+spec:
+  # TODO(user): Add fields here
